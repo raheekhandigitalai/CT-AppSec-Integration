@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests" thread-count="3">
+
+    <parameter name="capture.level" value="Application" />
+
+    <test name="Protected_Test_Without_Server_01">
+
+        <parameter name="application.type" value="protectedWithoutServer" />
+
+        <classes>
+            <class name="tests.EriBankLoginTests">
+                <methods>
+                    <include name="login_test_PROTECTED" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Protected_Test_Without_Server_02">
+
+        <parameter name="application.type" value="protectedWithoutServer" />
+
+        <classes>
+            <class name="tests.EriBankLoginTests">
+                <methods>
+                    <include name="login_test_PROTECTED" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Protected_Test_Without_Server_03">
+
+        <parameter name="application.type" value="protectedWithoutServer" />
+
+        <classes>
+            <class name="tests.EriBankLoginTests">
+                <methods>
+                    <include name="login_test_PROTECTED" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
